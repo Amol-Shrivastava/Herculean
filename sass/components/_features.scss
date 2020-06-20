@@ -1,0 +1,35 @@
+
+
+.features__content-body{
+    display:flex;
+    justify-content: space-between;
+    border:1px solid $color-secondary-silver-light-a1;
+    margin: 2em 2em 3.2em;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    // transform: skewY(-2deg);
+  }
+
+.features__content-body1{
+    border:1px solid $color-secondary-silver-light-b1;
+    flex:0 1 45%;
+    margin:2em 1.2em;
+      // transform: skewY(2deg);
+    border-radius: $bor-rad;
+    &-img{
+      width:100%;
+      border-radius: $bor-rad;
+      box-shadow: 0 2em 5em $color-secondary-silver-light-b1;
+    }
+
+    &-para{
+      // border:3px solid orange;
+      padding:0 .9em;
+      // text-align: center;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+}

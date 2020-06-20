@@ -1,0 +1,14 @@
+{
+  "name": "herculean",
+  "version": "1.0.0",
+  "description": "Herculean-Blessed with Muscles",
+  "main": "index.js",
+  "scripts": {
+        "compile:sass": "node-sass sass/main.scss css/landing_page.css -w"
+  },
+  "author": "Amol",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

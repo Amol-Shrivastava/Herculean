@@ -1,0 +1,20 @@
+.carousel-inner{
+  position:relative;
+  z-index: -2;
+  height:100vh;
+  // background-color: orange;
+  margin-top: .1em;
+}
+
+main{
+  background-color: $color-secondary-silver-light-1;
+}
+
+.features{
+  padding:12em 0 2em;
+}
+
+.cardsection{
+  background-color: $color-secondary-silver-light-3;
+  padding:12em 0 50rem;
+}

@@ -1,0 +1,55 @@
+.features__content-heading{
+  display:flex;
+  justify-content: center;
+  margin-bottom: 12em;
+  border:3px solid orange;
+  // margin-top: 5em;
+        & h3{
+          diplay:inline-block;
+          font-size: 4.4rem;
+          font-family: 'Playfair Display', sans-serif;
+          background-image: linear-gradient(to right, $color-primary-silver-dark-1,
+          $color-secondary-silver-light-2,$color-highlight-emerald);
+          display:inline-block;
+          -webkit-background-clip: text;
+          color:transparent;
+          font-weight: 900;
+          transition:all .3s ease;
+          border-bottom: 4px solid rgba(154, 193, 174,.9);
+          // transform:skewX(-15deg) skewY(-2deg);
+        }
+}
+
+.features__content-body1-para h4{
+  font-size: 3.6em;
+  font-family: 'Playfair Display', sans-serif;
+  background-image: linear-gradient(to right, $color-primary-silver-dark-1,
+  $color-secondary-silver-light-2,$color-highlight-emerald);
+
+  display:inline-block;
+  -webkit-background-clip: text;
+  color:transparent;
+  border-bottom: 4px solid rgba(154, 193, 174,.9);
+  // transform:skewX(-15deg) skewY(-2deg);
+}
+
+.figure__content-para{
+  max-width: 60em;
+  font-size: 1.8em;
+  margin-top: 1.3em;
+  // color:$color-primary-silver-dark-3;
+  color:#0F1A17;
+  font-weight: bold;
+  line-height: 1.6;
+  font-family: 'Poppins',sans-serif;
+
+}
+
+.brand-name{
+  font-size:2.2rem;
+  font-family: 'Metal Mania', sans;
+  color:#577275;
+  letter-spacing: 1.3px;
+  transition: transform .5s ease;
+
+}

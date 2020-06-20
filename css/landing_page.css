@@ -1,0 +1,337 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 62.5%;
+  line-height: 1.2;
+  background-color: #101619; }
+
+a {
+  text-decoration: none !important;
+  color: inherit !important; }
+
+ul {
+  list-style: none; }
+
+::-webkit-scrollbar {
+  width: .9em; }
+
+::-webkit-scrollbar-track {
+  background-color: #101619;
+  border-radius: 9px; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 9px;
+  color: #fff; }
+
+::selection {
+  color: #385457; }
+
+.features__content-heading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12em;
+  border: 3px solid orange; }
+  .features__content-heading h3 {
+    diplay: inline-block;
+    font-size: 4.4rem;
+    font-family: 'Playfair Display', sans-serif;
+    background-image: linear-gradient(to right, #30444B, #52796F, #53917E);
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 900;
+    transition: all .3s ease;
+    border-bottom: 4px solid rgba(154, 193, 174, 0.9); }
+
+.features__content-body1-para h4 {
+  font-size: 3.6em;
+  font-family: 'Playfair Display', sans-serif;
+  background-image: linear-gradient(to right, #30444B, #52796F, #53917E);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  border-bottom: 4px solid rgba(154, 193, 174, 0.9); }
+
+.figure__content-para {
+  max-width: 60em;
+  font-size: 1.8em;
+  margin-top: 1.3em;
+  color: #0F1A17;
+  font-weight: bold;
+  line-height: 1.6;
+  font-family: 'Poppins',sans-serif; }
+
+.brand-name {
+  font-size: 2.2rem;
+  font-family: 'Metal Mania', sans;
+  color: #577275;
+  letter-spacing: 1.3px;
+  transition: transform .5s ease; }
+
+.header {
+  padding: 0em 0.6em;
+  background-color: #30444B;
+  display: flex;
+  justify-content: space-between; }
+  .header__logo {
+    background-color: #D3D5D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2em 0.3em;
+    position: relative;
+    z-index: 5;
+    top: 13px;
+    left: 5px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    box-shadow: 0 4px 9px rgba(217, 228, 232, 0.4); }
+    .header__logo-heading {
+      font-family: 'Metal Mania', sans-serif;
+      font-size: 3rem;
+      color: #2B2D42;
+      letter-spacing: 1.3px; }
+  .header__nav {
+    align-self: center;
+    margin-right: 5px; }
+    .header__nav-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .header__nav-item {
+      font-size: 1.1rem;
+      margin-top: 1.2em;
+      font-family: 'Poppins',sans-serif;
+      letter-spacing: 1px;
+      color: #D3D5D9;
+      text-transform: capitalize;
+      cursor: pointer;
+      position: relative;
+      transition: all .5s ease; }
+      .header__nav-item:not(:last-child) {
+        margin-right: 3.5em; }
+      .header__nav-item:hover .submenu {
+        opacity: 1;
+        visibility: visible; }
+    .header__nav-link {
+      padding: 0.8em 0.4em;
+      position: relative;
+      z-index: 0; }
+      .header__nav-link::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #52796F;
+        border-bottom-left-radius: 9px;
+        border-bottom-right-radius: 9px;
+        z-index: -2;
+        transition: opacity 0.5s ease;
+        opacity: 0; }
+      .header__nav-link:hover::after {
+        opacity: 1; }
+
+.submenu {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 2.5em;
+  left: 1em;
+  background-color: #52796F;
+  padding: 0.4em 0.3em 0.4em 0.2em;
+  width: 13em;
+  text-align: left;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  transition: all .4s ease;
+  z-index: 13; }
+  .submenu__link {
+    filter: brightness(30%); }
+    .submenu__link:hover {
+      filter: brightness(900%); }
+
+.submenu-list {
+  line-height: 3; }
+  .submenu-list:not(:last-child) {
+    border-bottom: 1px solid #fff; }
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.card {
+  height: 28rem;
+  width: 21rem;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 9px;
+  perspective: 150em;
+  transition: all 5s ease;
+  border: none; }
+  .card__side {
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 9px;
+    transition: all 5s ease;
+    backface-visibility: hidden; }
+    .card__side--front {
+      background-color: orange; }
+    .card__side--back {
+      background-color: green;
+      transform: rotateY(-180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
+
+.carousel-indicators {
+  display: none; }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 4em;
+  position: relative;
+  z-index: 6;
+  filter: brightness(500%);
+  cursor: pointer; }
+
+.carousel-control-prev-icon {
+  left: -80px; }
+
+.carousel-control-next-icon {
+  right: -90px; }
+
+.carousel-item {
+  height: 100%;
+  background-size: 100% 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative; }
+  .carousel-item > .item {
+    /*disables white flash*/
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    -o-transition: -o-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible; }
+
+.slide1 {
+  background-image: url("../img/hero-man-medium.jpg"); }
+  .slide1__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    color: #fff;
+    text-align: center; }
+    .slide1__content h1 {
+      font-size: 7rem;
+      letter-spacing: 1.2px;
+      font-family: 'Metal Mania', sans-serif;
+      text-shadow: 0 2em 5em #101619; }
+    .slide1__content-para {
+      font-size: 3em;
+      letter-spacing: 1.2px;
+      font-family: 'Merriweather',serif;
+      color: #C0CABA; }
+
+.slide2 {
+  background-image: url("../img/hero-woman-medium.jpg"); }
+  .slide2__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center; }
+    .slide2__content-heading h3 {
+      font-size: 3.6rem;
+      font-family: 'Playfair Display', serif;
+      font-weight: 900; }
+    .slide2__content-para {
+      font-size: 1.1rem;
+      font-family: 'Merriweather',sans-serif;
+      color: #C0CABA;
+      line-height: 1.5; }
+      .slide2__content-para span {
+        font-size: 2rem;
+        font-family: 'Lobster',sans-serif;
+        letter-spacing: 1.5px; }
+      .slide2__content-para .before {
+        filter: brightness(75%); }
+      .slide2__content-para .after {
+        filter: brightness(300%); }
+
+.slide3 {
+  background-image: url("../img/hero-man-medium-2.jpg"); }
+  .slide3__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center; }
+    .slide3__content-heading h3 {
+      font-size: 3.3rem;
+      font-family: 'Playfair Display', serif;
+      font-weight: 900; }
+    .slide3__content-para {
+      font-size: 1.3rem;
+      font-family: 'Merriweather',sans-serif;
+      color: #C0CABA;
+      line-height: 1.5; }
+    .slide3__content .health {
+      filter: brightness(400%);
+      font-size: 1.6rem; }
+
+.features__content-body {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #95A68C;
+  margin: 2em 2em 3.2em; }
+  .features__content-body:last-child {
+    margin-bottom: 0; }
+
+.features__content-body1 {
+  border: 1px solid #809575;
+  flex: 0 1 45%;
+  margin: 2em 1.2em;
+  border-radius: 9px; }
+  .features__content-body1-img {
+    width: 100%;
+    border-radius: 9px;
+    box-shadow: 0 2em 5em #809575; }
+  .features__content-body1-para {
+    padding: 0 .9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+
+.carousel-inner {
+  position: relative;
+  z-index: -2;
+  height: 100vh;
+  margin-top: .1em; }
+
+main {
+  background-color: #C0CABA; }
+
+.features {
+  padding: 12em 0 2em; }
+
+.cardsection {
+  background-color: #D3D5D9;
+  padding: 12em 0 50rem; }

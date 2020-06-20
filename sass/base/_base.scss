@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 62.5%; //1rem = 10px
+  line-height: 1.2;
+  background-color: $color-primary-silver-dark-3;
+}
+
+a{
+  text-decoration: none !important;
+  color:inherit !important;
+}
+
+ul{
+  list-style: none;
+}
+
+::-webkit-scrollbar{
+  width:.9em;
+
+}
+
+::-webkit-scrollbar-track{
+  background-color: $color-primary-silver-dark-3;
+    border-radius: $bor-rad;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius:$bor-rad;
+  color:$color-white;
+}
+
+::selection{
+  color:$color-primary-silver-dark-2;
+}

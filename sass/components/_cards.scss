@@ -1,0 +1,46 @@
+.cards{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card{
+  // background-color: orange;
+  height:28rem;
+  width:21rem;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: $bor-rad;
+  perspective: 150em;
+  transition:all 5s ease;
+  border:none;
+
+  &__side{
+    color: $color-white;
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    border-radius: $bor-rad;
+    transition:all 5s ease;
+    backface-visibility: hidden;
+
+      &--front{
+      background-color: orange;
+    }
+
+    &--back{
+      background-color: green;
+      transform: rotateY(-180deg);
+      }
+  }
+
+  &:hover &__side--front{
+    transform: rotateY(180deg);
+  }
+
+  &:hover &__side--back{
+    transform: rotateY(0deg);
+  }
+}
