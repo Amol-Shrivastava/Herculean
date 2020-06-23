@@ -1,0 +1,28 @@
+.container{
+  max-width: 55%;
+  // max-height: 8vh;
+  padding:12em 0 3em;
+  margin:auto;
+  // border:3px solid red;
+}
+
+.main-img img,
+.imgs img
+{
+  width:100%;
+}
+//
+// .main-img img{
+//   margin-top: 2em;
+// }
+
+#current{
+  margin-bottom: .6em;
+}
+
+.imgs{
+  display:grid;
+  cursor:pointer;
+  grid-template-columns: repeat(8,2fr);
+  grid-column-gap: .6em;
+}

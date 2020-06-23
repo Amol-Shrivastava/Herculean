@@ -1,18 +1,23 @@
 .cards{
   display:flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 3rem .9em;
+
 }
 
 .card{
   // background-color: orange;
-  height:28rem;
+  height:31.3rem;
   width:21rem;
   cursor: pointer;
   background-color: transparent;
   border-radius: $bor-rad;
   perspective: 150em;
-  transition:all 5s ease;
+  transition:all 1.5s ease;
+  overflow: hidden;
+  // border: 2px solid $color-secondary-silver-light-a1;
   border:none;
 
   &__side{
@@ -23,17 +28,36 @@
     top:0;
     left:0;
     border-radius: $bor-rad;
-    transition:all 5s ease;
+    transition:all 1.5s ease;
     backface-visibility: hidden;
 
+    // border:none;
       &--front{
-      background-color: orange;
-    }
+        position:relative;
+          &--text{
+            background-color: $color-secondary-silver-light-1;
+            color:$color-primary-silver-dark-2;
+            position: absolute;
+            left:0;
+            bottom:1.2rem;
+            padding: .4em .6em;
+            text-align: center;
+            }
+        }
+
+
 
     &--back{
-      background-color: green;
+      background-color: $color-secondary-silver-light-1;
+      color:$color-secondary-silver-light-2;
+      text-align: center;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border: 1px solid $color-secondary-silver-light-a1;
       transform: rotateY(-180deg);
-      }
+    }
   }
 
   &:hover &__side--front{
@@ -41,6 +65,8 @@
   }
 
   &:hover &__side--back{
-    transform: rotateY(0deg);
+    transform:rotateY(0);
+
   }
+
 }

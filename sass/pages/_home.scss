@@ -1,9 +1,12 @@
-.carousel-inner{
-  position:relative;
-  z-index: -2;
-  height:100vh;
-  // background-color: orange;
-  margin-top: .1em;
+
+.carousel{
+  height: 75em;
+  // overflow-x: hidden;
+  // padding: 12rem 0 12rem;
+  // border:3px solid $color-primary-silver-dark-4;
+
+  // background: transparent;
+
 }
 
 main{
@@ -16,5 +19,17 @@ main{
 
 .cardsection{
   background-color: $color-secondary-silver-light-3;
-  padding:12em 0 50rem;
+  padding:12em 0 12em;
+}
+
+.gallery{
+  // // position:relative;
+  // padding:12rem 0 12rem;
+  text-align: center;
+
+}
+
+.footer{
+  padding:12rem 0 50rem;
+  background-color: $color-primary-silver-dark-3;
 }

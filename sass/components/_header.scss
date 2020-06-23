@@ -1,9 +1,13 @@
 .header{
   padding:0em 0.6em;
   background-color: $color-primary-silver-dark-1;
+  // background-color: transparent;
   display:flex;
   justify-content: space-between;
-
+  position:fixed;
+  width:100%;
+  z-index: 30;
+  margin-top: -.2em;
         &__logo{
           background-color: $color-secondary-silver-light-3;
           display:flex;
@@ -16,14 +20,8 @@
           left:5px;
           border-bottom-left-radius: 9px;
           border-bottom-right-radius: 9px;
-          box-shadow: 0 4px 9px rgba(217, 228, 232,0.4);
-            &-heading{
-              font-family: 'Metal Mania', sans-serif;
-              font-size: 3rem;
-              color:$color-text-hightlighted;
-              letter-spacing: 1.3px;
-            }
-      }
+          box-shadow: 0 4px 9px rgba(217, 228, 232,0.6);
+        }
 
       &__nav{
         align-self: center;
@@ -37,17 +35,15 @@
       }
 
           &-item{
-            font-size: 1.1rem;
-            margin-top: 1.2em;
-            font-family: 'Poppins',sans-serif;
-            letter-spacing: 1px;
-            color:$color-secondary-silver-light-3;
-            text-transform: capitalize;
             cursor:pointer;
             position:relative;
             transition: all .5s ease;
             &:not(:last-child){
             margin-right:3.5em;
+            }
+
+            &:not(:first-child):hover .header__nav-link::after {
+              opacity: 1;
             }
 
             &:hover .submenu{
@@ -86,7 +82,7 @@
     opacity:0;
     visibility: hidden;
     position:absolute;
-    top:2.5em;
+    top:2.2em;
     left:1em;
     background-color: $color-secondary-silver-light-2;
     padding:0.4em 0.3em 0.4em 0.2em;
@@ -109,5 +105,25 @@
   line-height: 3;
     &:not(:last-child){
     border-bottom: 1px solid $color-white;
+  }
+}
+
+.active {
+  color: $color-secondary-silver-light-3;
+  padding: 0.8em 0.4em;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-secondary-silver-light-2;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    z-index: -2;
+    transition: opacity 0.5s ease;
+    // opacity:0;
   }
 }

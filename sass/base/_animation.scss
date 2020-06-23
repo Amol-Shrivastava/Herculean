@@ -1,0 +1,25 @@
+@keyframes moveToTop{
+  0%{
+
+    transform: translateY(.6rem);
+  }
+
+  50%{
+
+    transform: translateY(.8rem);
+  }
+
+  100%{
+
+    transform: translateY(1.2rem);
+  }
+}
+
+
+@keyframes fadeInZoom{
+  to{
+    opacity:1;
+  
+  }
+
+}

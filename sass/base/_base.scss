@@ -10,6 +10,7 @@ body{
   font-size: 62.5%; //1rem = 10px
   line-height: 1.2;
   background-color: $color-primary-silver-dark-3;
+  overflow-x: hidden;
 }
 
 a{
@@ -21,6 +22,10 @@ ul{
   list-style: none;
 }
 
+img{
+  max-width: 100%;
+}
+
 ::-webkit-scrollbar{
   width:.9em;
 
@@ -28,7 +33,7 @@ ul{
 
 ::-webkit-scrollbar-track{
   background-color: $color-primary-silver-dark-3;
-    border-radius: $bor-rad;
+  border-radius: $bor-rad;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -37,5 +42,7 @@ ul{
 }
 
 ::selection{
-  color:$color-primary-silver-dark-2;
+  background-color:$color-primary-silver-dark-4;
+  color:$color-white;
+  padding:.4em .6em;
 }
