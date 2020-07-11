@@ -52,9 +52,16 @@ img {
 /********************LOGO**********************/
 .header__logo-heading {
   font-family: 'Metal Mania', sans-serif;
+  background-color: #DEE0E3;
   font-size: 3rem;
+  padding: 0.2em 0.3em;
   color: #2B2D42;
-  letter-spacing: 1.1px; }
+  letter-spacing: 1.1px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  box-shadow: 0 4px 9px rgba(217, 228, 232, 0.6); }
+  .header__logo-heading--footer {
+    display: inline-block; }
 
 /******************NAV_ITEMS**********************/
 .header__nav-item {
@@ -258,18 +265,13 @@ img {
   z-index: 30;
   margin-top: -.2em; }
   .header__logo {
-    background-color: #DEE0E3;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.2em 0.3em;
     position: relative;
     z-index: 5;
     top: 13px;
-    left: 5px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    box-shadow: 0 4px 9px rgba(217, 228, 232, 0.6); }
+    left: 5px; }
   .header__nav {
     align-self: center;
     margin-right: 5px; }
@@ -277,6 +279,8 @@ img {
       display: flex;
       justify-content: space-between;
       align-items: center; }
+      .header__nav-list--footer {
+        display: inline-block; }
     .header__nav-item {
       cursor: pointer;
       position: relative;
@@ -580,5 +584,5 @@ main {
   text-align: center; }
 
 .footer {
-  padding: 12rem 0 50rem;
+  padding: 12rem 0 20rem;
   background-color: #101619; }

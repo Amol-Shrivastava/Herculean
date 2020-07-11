@@ -9,18 +9,13 @@
   z-index: 30;
   margin-top: -.2em;
         &__logo{
-          background-color: $color-secondary-silver-light-3;
           display:flex;
           align-items: center;
           justify-content: center;
-          padding:0.2em 0.3em;
           position: relative;
           z-index: 5;
           top:13px;
           left:5px;
-          border-bottom-left-radius: 9px;
-          border-bottom-right-radius: 9px;
-          box-shadow: 0 4px 9px rgba(217, 228, 232,0.6);
         }
 
       &__nav{
@@ -31,6 +26,10 @@
           display:flex;
           justify-content: space-between;
           align-items: center;
+
+              &--footer{
+                display:inline-block;
+              }
           //border:3px solid orange;
       }
 

@@ -2,9 +2,17 @@
 
 .header__logo-heading{
   font-family: 'Metal Mania', sans-serif;
+  background-color: $color-secondary-silver-light-3;
   font-size: 3rem;
+  padding:0.2em 0.3em;
   color:$color-text-hightlighted;
   letter-spacing: 1.1px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  box-shadow: 0 4px 9px rgba(217, 228, 232,0.6);
+  &--footer{
+    display:inline-block;
+  }
 }
 
 /******************NAV_ITEMS**********************/
