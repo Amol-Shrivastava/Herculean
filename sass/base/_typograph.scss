@@ -1,209 +1,510 @@
 /********************LOGO**********************/
 
-.header__logo-heading{
-  font-family: 'Metal Mania', sans-serif;
-  background-color: $color-secondary-silver-light-3;
+.header__logo-heading {
+  font-family: "Metal Mania", sans-serif;
+  // background-color: #101619;
   font-size: 3rem;
-  padding:0.2em 0.3em;
-  color:$color-text-hightlighted;
+  padding: 0.2em 0.3em;
+  color: var(--color-white);
   letter-spacing: 1.1px;
-  border-bottom-left-radius: 9px;
-  border-bottom-right-radius: 9px;
-  box-shadow: 0 4px 9px rgba(217, 228, 232,0.6);
-  &--footer{
-    display:inline-block;
+  // border-bottom-left-radius: 9px;
+  // border-bottom-right-radius: 9px;
+  // box-shadow: 0 4px 9px rgba(217, 228, 232,0.6);
+  &--footer {
+    display: inline-block;
+  }
+
+  &--modified {
+    font-size: 3.6rem;
+    background-image: linear-gradient(
+      to right,
+      var(--color-primary-silver-dark-1),
+      var(--color-secondary-silver-light-2),
+      var(--color-highlight-emerald)
+    );
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+    // margin-top: 1.2em;
+    font-family: "Metal Mania", sans-serif;
   }
 }
 
 /******************NAV_ITEMS**********************/
 
-.header__nav-item{
-font-size: 1.1rem;
-margin-top: 1.2em;
-font-family: 'Poppins',sans-serif;
-letter-spacing: 1px;
-color:$color-secondary-silver-light-3;
-text-transform: capitalize;
+.header__nav-item {
+  font-size: 1.1rem;
+  margin-top: 1.2em;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  color: var(--color-white);
+  text-transform: capitalize;
 }
 
 /*****************************CAROUSEL*******************************/
-
-
-/**************************HEADINGS**********************************/
-//carousel primary heading
-.carousel__primary-heading{
-  font-size: 7rem;
-  letter-spacing: 1.2px;
-  font-family: 'Metal Mania', sans-serif;
-  text-shadow: 0 2em 5em $color-primary-silver-dark-3;
-  color:$color-white;
+.carousel__heading-text {
+  font-size: 5rem;
+  color: var(--color-white);
+  font-family: "Metal Mania", sans-serif;
+  letter-spacing: 1.4px;
 }
 
-//carousel secondary heading
-.carousel__secondary-heading{
-  font-size: 3.6rem;
-  font-family:'Playfair Display', serif;
-  font-weight: 900;
+.carousel__para {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-family: "Abril Fatface", cursive;
+  color: var(--color-white);
+  &-modified {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+}
 
+/**************************HEADINGS**********************************/
+//carousel primary heading footer heading
+.carousel__primary-heading {
+  font-size: 4rem;
+  letter-spacing: 1.2px;
+  font-family: "Metal Mania", sans-serif;
+  text-shadow: 0 2em 5em var(--color-primary-silver-dark-3);
+  color: var(--color-white);
+  text-align: center;
+  max-width: 65%;
+  border-bottom: 1px solid var(--color-border-bottom);
+}
+
+//footer address heading
+.carousel__secondary-heading {
+  font-size: 1.7rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  border-bottom: 1px solid var(--color-border-bottom);
+  color: var(--color-white);
+  display: inline-block;
   //for getinTouch LOGO
 }
 
 //carousel__secondary-heading--modified
-.carousel__secondary-heading--modified{
+.carousel__secondary-heading--modified {
   font-size: 3.3rem;
-  font-family:'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 900;
 }
-
 
 //main-headings
-.primary-heading{
-  diplay:inline-block;
+.primary-heading {
+  display: inline-block;
   font-size: 4.4rem;
-  font-family: 'Playfair Display', sans-serif;
-  background-image: linear-gradient(to right, $color-primary-silver-dark-1,
-  $color-secondary-silver-light-2,$color-highlight-emerald);
-  display:inline-block;
+  font-family: "Playfair Display", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary-silver-dark-1),
+    var(--color-secondary-silver-light-2),
+    var(--color-highlight-emerald)
+  );
+  display: inline-block;
   -webkit-background-clip: text;
-  color:transparent;
+  color: transparent;
   font-weight: 900;
-  transition:all .3s ease;
-  border-bottom: 4px solid rgba(154, 193, 174,.9);
+  transition: all 0.3s ease;
+  border-bottom: 4px solid rgba(154, 193, 174, 0.9);
   margin-bottom: 1.8em;
   // transform:skewX(-15deg) skewY(-2deg);
+  &--modified {
+    font-size: 3.6rem;
+    // border:3px solid red;
+    padding: 0 0.3em;
+    background-image: linear-gradient(
+      to right,
+      var(--color-primary-silver-dark-1),
+      var(--color-secondary-silver-light-2),
+      var(--color-highlight-emerald)
+    );
+    display: inline-block;
+    -webkit-background-clip: text;
+    border-bottom: 4px solid rgba(154, 193, 174, 0.9);
+    color: transparent;
+    font-family: "Playfair Display", sans-serif;
+  }
 }
 
-
 //features-headings
-.second-primary-heading{
+.second-primary-heading {
   font-size: 3.6em;
-  font-family: 'Playfair Display', sans-serif;
-  background-image: linear-gradient(to right, $color-primary-silver-dark-1,
-  $color-secondary-silver-light-2,$color-highlight-emerald);
-  display:inline-block;
+  font-family: "Playfair Display", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary-silver-dark-1),
+    var(--color-secondary-silver-light-2),
+    var(--color-highlight-emerald)
+  );
+  display: inline-block;
   -webkit-background-clip: text;
   text-align: center;
-  color:transparent;
-  border-bottom: 4px solid rgba(154, 193, 174,.9);
+  color: transparent;
+  border-bottom: 4px solid rgba(154, 193, 174, 0.9);
+  &-modified {
+    margin: 1em 0 0.6em;
+  }
+
   // transform:skewX(-15deg) skewY(-2deg);
 }
 
-
 //trainers-names-front side
-.secondary-heading{
+.secondary-heading {
   font-size: 2.1rem;
-  font-family: 'Playfair Display',cursive;
+  font-family: "Playfair Display", cursive;
   letter-spacing: 1.2px;
   font-weight: 800;
   filter: brightness(250%);
-
+  &--modified {
+    color: var(--color-secondary-silver-light-2);
+    display: inline-block;
+    filter: brightness(80%);
+    border-bottom: 1px solid var(--color-secondary-silver-light-b1);
+    margin-top: 1em;
+  }
 }
 
 //trainers-names-back side
-.tertiary-heading{
+.tertiary-heading {
   font-size: 2.4rem;
-  font-family: 'Playfair Display', cursive;
+  font-family: "Playfair Display", cursive;
   letter-spacing: 1px;
   font-weight: 600;
-  color:$color-secondary-silver-light-b1;
+  color: var(--color-secondary-silver-light-b1);
   filter: brightness(89%);
+  border-bottom: 2px solid var(--color-border-bottom);
+  display: inline-block;
+
+  &-form_head {
+    font-size: 1.8rem;
+    border-bottom: none;
+    transform: translateY(3px);
+    // display: block;
+    // width:100%;
+    // align-self: flex-end;
+  }
 }
 
-.getinTouch__heading{
+.getinTouch__heading {
   font-size: 3.1rem;
-  font-family: 'Faster One', cursive;
-  color:$color-white;
-  position:relative;
-  top:-17rem;
-  left:-1em;
-  background-color:rgba(0,0,0,0.6);
-  border-radius: $bor-rad;
-  padding-right: .1em;
+  font-family: "Faster One", cursive;
+  color: var(--color-white);
+  position: relative;
+  top: -17rem;
+  left: -1em;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: var(--bor-rad);
+  padding-right: 0.1em;
+}
+
+.signin-heading {
+  font-family: "Red Rose", cursive;
+  font-size: 1.9rem;
+  border-bottom: 1px solid var(--color-border-bottom);
+  width: 45%;
+  max-width: 500px;
+  margin-bottom: 0.4rem;
+  font-weight: 400;
+  color: var(--color-signin-heading);
+}
+
+.sidebar-item-icon-heading {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  fill: var(--color-primary-silver-dark-4);
+  margin-top: 5px;
+  &-payment {
+    transform: translateX(15px);
+  }
+  &-course {
+    transform: translateX(0px);
+  }
+}
+
+// trainer table column heading
+.register__heading {
+  font-size: 0.8rem;
+  font-family: "Merriweather", sans-serif;
+  text-transform: uppercase;
+  color: var(--color-primary-silver-dark-3);
+  font-weight: bold;
+}
+
+//trainer details
+.trainee__details {
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  color: var(--color-primary-silver-dark-3);
+  letter-spacing: 1px;
+  &-links {
+    color: #0077b6;
+  }
+  &-days {
+    font-size: 0.9rem;
+    font-weight: bold;
+    // color:var(--color-primary-silver-dark-3);
+  }
+}
+
+.footer__nav-heading {
+  font-size: 1.5rem;
+  font-family: "Playfair Display", sans-serif;
+  color: var(--color-white);
+  font-style: italic;
+  font-weight: bold;
+  border-bottom: 2px solid var(--color-secondary-silver-light-3);
+  text-align: center;
 }
 
 /**************************PARAS**********************************/
 //carousel__slide1__content-para
-.slide1__content-para{
+.slide1__content-para {
   font-size: 3em;
   letter-spacing: 1.2px;
-  font-family: 'Merriweather',serif;
-  color:$color-secondary-silver-light-1;
+  font-family: "Merriweather", serif;
+  color: var(--color-secondary-silver-light-1);
 }
 
 //carousel__slide2__content-para
-.slide2__content-para{
-font-size: 1.1rem;
-font-family: 'Merriweather',sans-serif;
-color:$color-secondary-silver-light-1;
-line-height: 1.5;
-& span{
-  font-size: 2rem;
-  font-family:'Lobster',sans-serif;
-  letter-spacing: 1.5px;
+.slide2__content-para {
+  font-size: 1.1rem;
+  font-family: "Merriweather", sans-serif;
+  color: var(--color-secondary-silver-light-1);
+  line-height: 1.5;
+  & span {
+    font-size: 2rem;
+    font-family: "Lobster", sans-serif;
+    letter-spacing: 1.5px;
+  }
+  &-modified {
+    margin: 1em 0 0.6em;
+    color: var(--color-secondary-silver-light-2);
+  }
 }
-
-}
-
 
 //carousel__slide3__content-para
-.slide3__content-para{
+.slide3__content-para {
   font-size: 1.3rem;
-  font-family: 'Merriweather',sans-serif;
-  color:$color-secondary-silver-light-1;
+  font-family: "Merriweather", sans-serif;
+  color: var(--color-secondary-silver-light-1);
   line-height: 1.5;
+  &-footer {
+    color: var(--color-white);
+    font-size: 1.2rem;
+  }
 }
 
 //facilities para
-.primary--para{
-  max-width: 60em;
-  font-size: 1.8em;
+.primary--para {
+  font-size: 1.4rem;
   margin-top: 1.3em;
-  // color:$color-primary-silver-dark-3;
-  color:#0F1A17;
+  // color: var(--color-primary-silver-dark-3);
+  color: #0f1a17;
   font-weight: light;
   line-height: 1.6;
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins", sans-serif;
+
+  &--modified {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    font-weight: lighter;
+    color: var(--color-primary-silver-dark-3);
+  }
+
+  &-review {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    padding: 0 0.4em;
+    font-family: "Playfair Display", sans-serif;
+    color: var(--color-primary-silver-dark-3);
+  }
+
+  &-review--remember {
+    font-size: 0.9rem;
+    font-family: "Merriweather", sans-serif;
+  }
+
+  &-copyright {
+    font-size: 0.9rem;
+    color: var(--color-white);
+    text-align: center;
+    max-width: 65%;
+    border-top: 1px solid var(--color-border-bottom);
+    // margin-top: -2rem;
+  }
 }
 
 //about trainers para
-.secondary--para{
-  margin: .8rem auto;
-  font-size: .9rem;
+.secondary--para {
+  margin: 0.8rem auto;
+  font-size: 0.9rem;
   line-height: 1.5;
-  max-width: 80%;
-  font-family: 'Merriweather',cursive;
-  color:$color-primary-silver-dark-2;
+  // max-width: 80%;
+  font-family: "Merriweather", cursive;
+  color: var(--color-primary-silver-dark-2);
+  &-modified {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    font-weight: lighter;
+    color: var(--color-primary-silver-dark-2);
+    position: relative;
+    z-index: 1;
+
+    &-strength {
+      font-size: 2rem;
+      font-style: italic;
+    }
+  }
+}
+
+//reviewer name
+.reviewer__name {
+  font-size: 2rem;
+  font-family: "Lobster", sans-serif;
+  color: var(--color-white);
+  background-color: var(--color-primary-silver-dark-2);
+  display: inline-block;
+  padding: 0 0.3em;
+    &--modified{
+      font-size: 2rem;
+      font-family: "Lobster", sans-serif;
+      color: var(--color-white);
+      display: inline-block;
+    }
+  // border-radius: var(--bor-rad);
+}
+
+.position{
+  margin-top: .6rem;
+  font-size: 1.2rem;
+  font-family: "Lobster", sans-serif;
+  color: var(--color-white);
+  display: inline-block;
+  filter:brightness(80%);
+  letter-spacing: 1px;
+}
+
+//signin-para
+.signin-para {
+  font-family: "PT Serif", serif;
+  font-size: 0.7rem;
+  padding: 0.3rem 0;
+  letter-spacing: 1px;
+  color: var(--color-condition);
+}
+
+.card__name-text {
+  font-size: 1.1rem;
+  color: var(--color-white);
+  font-family: "Playfair Display", sans-serif;
+  text-transform: uppercase;
+}
+
+.joinIn-text {
+  font-size: 1.1rem;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 400;
+}
+
+.about-trainer {
+  font-size: 2.6rem;
+  color: var(--color-secondary-silver-light-2);
+  border-bottom: 1px solid var(--color-secondary-silver-light-2);
+  display: block;
+  &-modified {
+    font-size: 0.9rem;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    color: var(--color-primary-silver-dark-3);
+    margin-top: 0.5rem;
+    border-bottom: none;
+  }
 }
 
 /***********************EXTRAS**************************/
 //before and after span
-.before{
-  filter:brightness(75%);
+.before {
+  filter: brightness(75%);
 }
 
-.after{
-filter: brightness(300%);
+.after {
+  filter: brightness(300%);
 }
 
 //health span
-.health{
-filter: brightness(400%);
-font-size: 1.6rem;
+.health {
+  filter: brightness(400%);
+  font-size: 1.6rem;
 }
 
 //HERCULEAN brand name
-.brand-name{
-  font-size:2.2rem;
-  font-family: 'Metal Mania', sans;
-  color:#577275;
+.brand-name {
+  font-size: 2.2rem;
+  font-family: "Metal Mania", sans;
+  color: #577275;
   letter-spacing: 1.3px;
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
+  &-modified {
+    color: var(--color-white);
+    font-weight: 900;
+    margin-bottom: -3em;
+  }
 }
 
 //trainers quotes
-.saying{
+.saying {
   font-size: 1.4rem;
-  font-family: 'Berkshire Swash',cursive;
-  color:$color-highlight-emerald;
-  margin-bottom: .4em;
+  font-family: "Berkshire Swash", cursive;
+  color: var(--color-highlight-emerald);
+  margin-bottom: 0.4em;
+}
+
+.copy {
+  font-size: 1rem;
+}
+
+.quotes {
+  opacity: 0.3;
+  position: absolute;
+  z-index: -1;
+  &--left {
+    top: 0.2em;
+    left: -2.4em;
+    font-size: 8rem;
   }
+
+  &--right {
+    // top:0;
+    bottom: -0.75em;
+    right: -0.27em;
+    font-size: 8rem;
+  }
+}
+
+.exercises__item {
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+}
+
+// .signup_text{
+//   font-size: 1rem;
+//   font-family: 'Playfair Display';
+//   letter-spacing: 1.3px;
+//   color:var(--color-text-hightlighted);
+//   position:relative;
+//   top:-.2rem;
+//   margin-right: .6rem;
+// }
+
+.asterick {
+  font-size: 1rem;
+  color: var(--color-condition);
+}
+
+.optional {
+  filter: brightness(70%);
+}

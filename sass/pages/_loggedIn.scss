@@ -1,0 +1,127 @@
+
+
+.loggedIn{
+
+  &__Container{
+    margin-top: 7.2em;
+    display:flex;
+    justify-content: space-between;
+
+  }
+
+  &__Sidebar{
+    flex: 0 0 110px;
+    border-right: 2px solid var(--color-secondary-silver-light-4);
+    background-color: var(--color-secondary-silver-light-4);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__Content{
+    flex:1;
+    // position:relative;
+  }
+}
+
+hr{
+   border: 0;
+   height: 1px;
+   background: #333;
+   background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.sidebar__container{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  // border:3px solid yellow;
+  padding: 0 .3rem;
+}
+
+.sidebar-item{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+    padding: .6rem .8rem;
+    border: 1px solid var(--color-primary-silver-dark-3);
+    margin: 2rem 0;
+    cursor:pointer;
+    transition: all 400ms ease;
+    transform:scale(1);
+
+    &:hover{
+      background-color: var(--color-secondary-silver-light-a1);
+    }
+
+    &:focus{
+      // background-color: var(--color-secondary-silver-light-a1);
+      outline:none;
+      transform: scale(.85);
+    }
+
+   &-icon svg{
+     width:2.4rem;
+     height:2.4rem;
+     fill:var(--color-primary-silver-dark-4);
+   }
+
+}
+
+.admin-heading{
+  margin-top: .6rem;
+}
+
+.admin-course-heading{
+  transform: translateX(1.0rem);
+}
+
+.admin-register-heading{
+  transform: translateX(1.0rem);
+}
+
+#item-4{
+  padding: .6em 2.7em;
+}
+
+.clickactive{
+  background-color: var(--color-toggle-sidebutton);
+}
+
+/**********************LOGGEDiN ITEM*************************/
+.loggedIn__item{
+  // position:absolute;
+  // z-index: 90;
+  background-color: var(--color-white);
+}
+
+
+/**********************COURSE ITEM*************************/
+.courseItem{
+  // z-index: 2;
+  // opacity: 0;
+  // visibility: hidden;
+  display:block;
+}
+
+/**********************PAY ITEM*************************/
+.paymentItem{
+  display:none;
+}
+
+/**********************EDIT FORM*************************/
+.editProfileItem{
+  display:none;
+}
+
+/**********************TOGGLE CLASS*************************/
+.showDisplay{
+  display:block;
+}
+
+.hideDisplay{
+  display:none;
+}

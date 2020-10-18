@@ -1,17 +1,49 @@
- $color-primary-silver-dark-1: #30444B;
- $color-primary-silver-dark-2: #385457;
- $color-primary-silver-dark-3: #101619;
- $color-primary-silver-dark-4: #204051;
+ // $color-primary-silver-dark-1: #30444B;
+ // $color-primary-silver-dark-2: #385457;
+ // $color-primary-silver-dark-3: #101619;
+ // $color-primary-silver-dark-4: #204051;
+ //
+ // $color-secondary-silver-light-1: #E9EAEC;
+ // $color-secondary-silver-light-a1:#AEB8C1;
+ // $color-secondary-silver-light-b1:#809575;
+ // $color-secondary-silver-light-2: #52796F;
+ // $color-secondary-silver-light-3: #DEE0E3;
+ //
+ // $color-invalid: #A61411;
+ // $color-text-hightlighted: #2B2D42;
+ // $color-white: #fff;
+ // $color-highlight-emerald: #53917E;
+ //
+ // $bor-rad: 9px;
 
- $color-secondary-silver-light-1: #E9EAEC;
- $color-secondary-silver-light-a1:#AEB8C1;
- $color-secondary-silver-light-b1:#809575;
- $color-secondary-silver-light-2: #52796F;
- $color-secondary-silver-light-3: #DEE0E3;
 
- $color-invalid: #A61411;
- $color-text-hightlighted: #2B2D42;
- $color-white: #fff;
- $color-highlight-emerald: #53917E;
+:root{
+--color-primary-silver-dark-1: #30444B;
+--color-primary-silver-dark-2: #385457;
+--color-primary-silver-dark-3: #101619;
+--color-primary-silver-dark-4: #204051;
+--color-primary-silver-dark-4-light: #172F3A;
 
- $bor-rad: 9px;
+--color-secondary-silver-light-1: #E9EAEC;
+--color-secondary-silver-light-a1:#AEB8C1;
+--color-secondary-silver-light-b1:#809575;
+--color-secondary-silver-light-2: #52796F;
+--color-secondary-silver-light-3: #DEE0E3;
+--color-secondary-silver-light-4: #F1F2F3;
+--color-toggle-sidebutton: #D1D7DC;
+
+--color-invalid: #A61411;
+--color-text-hightlighted: #2B2D42;
+--color-white: #fff;
+--color-highlight-emerald: #53917E;
+--color-condition: #F5006A;
+--color-signin-heading: #0D181C;
+--color-addBtn: #0F6B2F;
+--color-delBtn: #EA3734;
+
+--color-scrolled-header-background: #84a59d;
+
+--color-border-bottom: #f4a261;
+
+--bor-rad: 9px;
+}

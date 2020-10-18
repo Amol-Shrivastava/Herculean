@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HERCULEAN >> Blessed with Muscles</title>
+
+  <!-- internal css -->
+  <link rel="stylesheet" href="css\landing_page.css">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Abril+Fatface&family=PT+Serif:ital,wght@1,700&family=Red+Rose:wght@300&family=Faster+One&family=Metal+Mania&family=Poppins&family=Berkshire+Swash&family=Lobster&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <!-- for media query -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header style =
+  " background-color: var(--color-scrolled-header-background)"
+  >
+<div class="header__logo">
+      <a href="landing-page.html">
+        <h1 class="header__logo-heading">Herculean</h1>
+      </a>
+    </div>
+
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a href="landing-page.html" class="header__nav-link">Get Started</a></li>
+        <li class="header__nav-item"><span class="header__nav-link link__one">Classes</span>
+          <div class="submenu">
+            <ul class="submenu1__list">
+              <li class="submenu1__item submenu-list"><a href="bodybuilding.html" class="submenu1__link submenu__link">Body Building</a></li>
+              <li class="submenu1__item submenu-list"><a href="weightloss.html" class="submenu1__link submenu__link">Weight Loss</a></li>
+              <li class="submenu1__item submenu-list"><a href="strengthtraining.html" class="submenu1__link submenu__link">Strength Training</a></li>
+              <li class="submenu1__item submenu-list"><a href="yoga.html" class="submenu1__link submenu__link">Yoga</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="header__nav-item"><a href="schedule.html" target="_blank" class="header__nav-link link__three">Schedule</a>
+        </li>
+
+        <li class="header__nav-item"><span class="header__nav-link link__one">Career</span>
+          <div class=" submenu">
+            <ul class="submenu4__list">
+              <li class="submenu4__item submenu-list"><a href="" class="submenu4__link submenu__link">Trainer</a></li>
+              <li class="submenu4__item submenu-list"><a href="" class="submenu4__link submenu__link">Nutritionist</a></li>
+              <li class="submenu4__item submenu-list"><a href="" class="submenu3__link submenu__link">Yoga Instructor</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="header__nav-item"><a href="" class="header__nav-link">Contact</a></li>
+            <li class="header__nav-item"><span class="header__nav-link" id="sign-in">SignIn</span></li>
+      </ul>
+    </nav>
+  </header>
+
+
+<!-- trainer form -->
+<div class="trainerform">
+  <div class="loggedIn__item" id = "editProfileItem">
+    <div class="editForm__box">
+
+        <form action="" class="input_group input_group--editform" id="login">
+        <sup class="asterick asterick--editform asterick--editform">&#42;</sup>
+        <input type="text" name="editForm" class="input-field input-field--editform" placeholder="Enter your name" required>
+
+        <sup class="asterick asterick--editform asterick--editform">&#42;</sup>
+        <input type="text" name="editForm" class="input-field input-field--editform" placeholder="Enter your gender" required>
+
+        <input type="text" name="editForm" class="input-field input-field--editform" placeholder="Enter your age">
+
+        <sup class="asterick asterick--editform asterick--editform-1">&#42;</sup>
+        <input type="email" name="editForm" class="input-field input-field--editform" placeholder="Enter your email" required>
+
+        <sup class="asterick asterick--editform asterick--editform-3">&#42;</sup>
+        <input type="tel" name="editForm" class="input-field input-field--editform" placeholder="Enter your phone number" required>
+
+        <sup class="asterick asterick--editform asterick--editform-2">&#42;</sup>
+        <input type="text" name="editForm" class="input-field input-field--editform" placeholder="Enter your Qualification" required>
+
+        <sup class="asterick asterick--editform asterick--editform-4">&#42;</sup>
+        <input type="text" name="editForm" class="input-field input-field--editform" placeholder="Enter work experience (if any)" required>
+
+          <button class="joinIn joinIn-text joinIn--editform" type="submit" name="editForm">Submit</button>
+
+      </form>
+
+    </div>
+
+        <p class="signin-para schedule-para"><span class=asterick>&#42;</span>Please enter a valid email address as we will communicate using email.</p>
+  </div>
+</div>
+
+<div class="modal-container" id='modal'>
+  <div class="modal-body">
+    <div class="form__box">
+
+      <div class="form__heading">
+      <div class="signin-heading-container">
+        <h3 class="signin-heading">Sign In</h3>
+        <span class="close" id = "close">&#10539;</span>
+      </div>
+      <p class="signin-para"><span class=asterick>&#42;</span> Please Sign In with given Password</p>
+      </div>
+
+      <form action="" class="input_group" id="login">
+
+        <input type="email" name="" class="input-field" placeholder="Enter your email" required>
+        <input type="password" name="" class="input-field" placeholder="Enter your password" required>
+
+        <div class="checkbox">
+          <input type="checkbox" name="" class="input-checkbox">
+          <span class="primary--para-review primary--para-review--remember">Remember Password</span>
+        </div>
+
+        <button class="submit-btn">
+
+          <span class="primary-button__text primary-button__text--submit">LOG IN</span>
+          <!-- <svg class="icon icon-arrow-right2"><use xlink:href="#icon-arrow-right2">
+             <symbol id="icon-arrow-right2" viewBox="0 0 32 32">
+       <path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
+       </symbol>
+           </use></svg>
+            -->
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+
+  <section class="footer">
+  <div class="footer__headingbox carousel__primary-heading"><a href="landing_page.html">HERCULEAN</a></div>
+
+  <div class="footer__container">
+    <div class="footer__container-sect1">
+        <div class="find_us carousel__secondary-heading"> Find Us</div>
+        <p class="address address-1 carousel__para carousel__para-modified">58, 2nḍ Floor, Star Planet, Zone-2, MP Nagar</p>
+        <p class="address address-2 carousel__para carousel__para-modified"> Bhopal(462011), Madhya Pradesh</p>
+        <p class="address address-3 carousel__para carousel__para-modified">07554006576</p>
+    </div>
+
+    <div class="footer__container-sect2">
+      <div class="carousel__secondary-heading">About Us</div>
+    <nav class="footer__nav">
+      <ul class="footer__nav-list">
+
+        <li class="footer__nav-item carousel__para-modified"><a href="" class="footer__nav-link slide3__content-para-footer">Our Team</a></li>
+
+         <li class="footer__nav-item carousel__para-modified"><a href="" class="footer__nav-link slide3__content-para-footer">Career</a></li>
+
+         <li class="footer__nav-item carousel__para-modified"><a href="franchise.html" class="footer__nav-link slide3__content-para-footer">Franchise</a></li>
+        </ul>
+    </nav>
+    </div>
+
+
+    <div class="footer__container-sect3">
+
+      <div class="carousel__secondary-heading">Join Us</div>
+      <div class="social-media__nav">
+        <ul class="social-media-list">
+          <li class="social-media-item">
+        <a href="" class="social-media__link">
+            <svg class="gmail">
+              <use xlink:href = "icomoon/sprite.svg#icon-envelop"></use>
+            </svg>
+        </a>
+      </li>
+
+        <li class="social-media-item">
+      <a href="" class="social-media__link">
+        <svg class="fb">
+          <use xlink:href = "icomoon/sprite.svg#icon-facebook-official"></use>
+        </svg>
+      </a>
+      </li>
+
+        <li class="social-media-item">
+      <a href="" class="social-media__link">
+        <svg class="insta">
+          <use xlink:href = "icomoon/sprite.svg#icon-instagram">
+                </use>
+        </svg>
+      </a>
+      </li>
+      </ul>
+
+  </div>
+  </div>
+</div>
+
+<div class="copyrightbox">
+  <p class="primary--para primary--para-copyright">
+    <span class="brand-name brand-name-modified"><a href="landing_page.html">HERCULEAN</a></span><sup><span class="copy">&copy;</span></sup> <br> <span class="rights">All rights reserved.</span>
+  </p>
+</div>
+
+</section>
+
+<script src="js/schedule.js" charset="utf-8"></script>
+</body>
+</html>

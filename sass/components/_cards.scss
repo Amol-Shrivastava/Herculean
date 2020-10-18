@@ -2,7 +2,7 @@
   display:flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   margin: 0 3rem .9em;
 
 }
@@ -13,21 +13,21 @@
   width:21rem;
   cursor: pointer;
   background-color: transparent;
-  border-radius: $bor-rad;
+  border-radius: var(--bor-rad);
   perspective: 150em;
   transition:all 1.5s ease;
   overflow: hidden;
-  // border: 2px solid $color-secondary-silver-light-a1;
+  // border: 2px solid var(--color-secondary-silver-light-a1);
   border:none;
 
   &__side{
-    color: $color-white;
+    color: var(--color-white);
     height:100%;
     width:100%;
     position:absolute;
     top:0;
     left:0;
-    border-radius: $bor-rad;
+    border-radius: var(--bor-rad);
     transition:all 1.5s ease;
     backface-visibility: hidden;
 
@@ -35,8 +35,8 @@
       &--front{
         position:relative;
           &--text{
-            background-color: $color-secondary-silver-light-1;
-            color:$color-primary-silver-dark-2;
+            background-color: var(--color-secondary-silver-light-1);
+            color:var(--color-primary-silver-dark-2);
             position: absolute;
             left:0;
             bottom:1.2rem;
@@ -48,14 +48,14 @@
 
 
     &--back{
-      background-color: $color-secondary-silver-light-1;
-      color:$color-secondary-silver-light-2;
+      background-color: var(--color-secondary-silver-light-1);
+      color:var(--color-secondary-silver-light-2);
       text-align: center;
       display:flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      border: 1px solid $color-secondary-silver-light-a1;
+      border: 1px solid var(--color-secondary-silver-light-a1);
       transform: rotateY(-180deg);
     }
   }
@@ -69,4 +69,50 @@
 
   }
 
+}
+
+/*********************LoGGED IN CARDS***************************/
+.selectedCards{
+  display:flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  // justify-content: space-around;
+  margin: 2rem 1rem;
+}
+
+.cards__container{
+    margin: 2rem 0;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    // justify-content: space-between;
+}
+
+.loggedIn__card{
+  flex: 0 0 20rem;
+  border:1px solid var(--color-secondary-silver-light-a1);
+    &:not(:last-child){
+      // margin-left: .6rem;
+      margin-right: 1.5rem;
+    }
+
+    &:first-child{
+      margin-left: .1rem;
+    }
+
+    .loggedInCardImg{
+      width: 100%;
+    }
+}
+
+.card__name{
+  display:block;
+  margin: 0 auto;
+  text-align: center;
+  // border:1px solid red;
+  width:75%;
+  padding: .4rem .8rem;
+  background-color: var(--color-primary-silver-dark-4);
+  transform: translateY(-55%);
 }

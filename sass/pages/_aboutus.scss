@@ -1,0 +1,90 @@
+
+
+.aboutContainer{
+  min-height: 100vh;
+  // padding-top: 8rem;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(bottom, #2C5364, #203A43, #0F2027);
+  background: -o-linear-gradient(bottom, #2C5364, #203A43, #0F2027);
+  background: linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ display:grid;
+ grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-rows: min-content repeat(4, min-content);
+ grid-gap: 1.7rem;
+ padding: 8rem 4rem 4rem;
+}
+
+
+
+.grid-item{
+  position:relative;
+  transition: all 300ms ease-in-out;
+
+  .front{
+
+  }
+  .back{
+    position:absolute;
+    top:0;
+    left:0;
+    color: var(--color-secondary-silver-light-4);
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height:99.6%;
+    opacity:0;
+    visibility: hidden;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+      &-fix{
+          height: 92.9%;
+        @media (max-width: 900px){
+          height: 99.9%;
+
+        }
+      }
+
+    &--limit{
+      max-height:379px;
+    }
+  }
+
+  &:hover{
+    transform:scale(1.05);
+
+      .back{
+      opacity:1;
+      visibility: visible;
+    }
+  }
+}
+
+.intro{
+  display:flex;
+  flex-direction: column;
+}
+.social{
+  display:flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+
+
+
+.gmail svg,
+.twitter svg,
+.facebook svg,
+.insta svg{
+  margin:0 1rem;
+  width: 2rem;
+  height: 2rem;
+  fill: var(--color-secondary-silver-light-4);
+    // &:hover{
+    //   fill: var(--color-white);
+    // }
+}

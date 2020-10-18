@@ -1,0 +1,10 @@
+.exercises{
+  list-style:disc;
+  text-align: left;
+  // border:3px solid red;
+  display:inline-block;
+  margin: 1.4em 0;
+    &__item{
+      padding: .5em 0;
+    }
+}

@@ -6,8 +6,8 @@
 .features__content-body{
     display:flex;
     justify-content: space-around;
-    //border:1px solid $color-secondary-silver-light-a1;
-    border-radius: $bor-rad;
+    //border:1px solid var(--color-secondary-silver-light-a1);
+    border-radius: var(--bor-rad);
     margin: 2em 2em 3.9em;
     &:last-child{
       margin-bottom: 0;
@@ -16,15 +16,15 @@
   }
 
 .features__content-body1{
-    //border:1px solid $color-secondary-silver-light-b1;
+    //border:1px solid var(--color-secondary-silver-light-b1);
     flex:0 1 35%;
     margin:2em 1.2em;
       // transform: skewY(2deg);
-    border-radius: $bor-rad;
+    border-radius: var(--bor-rad);
     &-img{
       width:100%;
-      border-radius: $bor-rad;
-      box-shadow: 0 2em 5em $color-secondary-silver-light-b1;
+      border-radius: var(--bor-rad);
+      box-shadow: 0 2em 5em var(--color-secondary-silver-light-b1);
     }
 
     &-para{

@@ -1,16 +1,39 @@
+header{
+  padding:0 0.6em;
+  // background-color: #84a59d;
+   // background-color: transparent;
+  // background-color: #F7EDE2;
+  // border:3px solid red;
+  transition:all 150ms ease-in;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index: 30;
+  margin-top: -.3em;
+    // &--modified{
+    // background-color:var(--color-scrolled-header-background);
+    // }
+}
 
 .carousel{
-  height: 75em;
-  // overflow-x: hidden;
-  // padding: 12rem 0 12rem;
-  // border:3px solid $color-primary-silver-dark-4;
-
-  // background: transparent;
+  height: 100vh;
+  background-image: url('../img/carousel/hero-2.jpg');
+  background-color: var(--color-primary-silver-dark-3);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 2rem;
+  position:relative;
+  text-align: center;
 
 }
 
 main{
-  background-color: $color-secondary-silver-light-1;
+  background-color: var(--color-secondary-silver-light-1);
 }
 
 .features{
@@ -18,18 +41,18 @@ main{
 }
 
 .cardsection{
-  background-color: $color-secondary-silver-light-3;
+  background-color: var(--color-secondary-silver-light-3);
   padding:12em 0 12em;
 }
 
 .gallery{
   // // position:relative;
-  // padding:12rem 0 12rem;
+  padding:12em 0 7em;
   text-align: center;
 
 }
 
 .footer{
-  padding:12rem 0 20rem;
-  background-color: $color-primary-silver-dark-3;
+  padding: 8em 0 4em;
+  background-color: var(--color-primary-silver-dark-1);
 }

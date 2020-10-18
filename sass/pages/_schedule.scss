@@ -1,0 +1,25 @@
+.schedule{
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  // background-color: yellow;
+
+  // height:100vh;
+  &-table{
+        margin: 0 auto;
+     // margin-top: 50rem;
+  }
+  &-para{
+    margin-top: 1rem;
+    text-align: center;
+    &-2{
+      margin-top: .5rem;
+    }
+  }
+}
+
+.timing{
+  display:inline-block;
+  &:not(:first-child){
+    margin-top: 1rem;
+  }
+}
